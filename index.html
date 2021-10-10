@@ -124,7 +124,7 @@
   <body>
     <br>
           <center>
-          	<span style="font-size:32px">Active Domain Adaptation via Clustering Uncertainty-weighted Embeddings</span>
+          	<span style="font-size:32px">Active Domain Adaptation via Clustering Uncertainty-weighted Embeddings (ICCV 2021)</span>
 	  		  <table align=center width=600px>
 	  			  <tr>
 	  	              <td align=center>
@@ -146,21 +146,26 @@
 	  						<span style="font-size:24px"><a href='https://arxiv.org/abs/2010.08666'>[Paper]</a></span>
 		  		  		</center>
 		  		  	  </td>
-	  	              <!-- <td align=center width=120px>
+	              <td align=center width=120px>
 	  					<center>
-	  						<span style="font-size:24px"><a href='https://github.com/virajprabhu/active-da-clue'>[GitHub]</a></span><br>
-		  		  		</center>
-		  		  	  </td> -->
-	  	              <td align=center width=120px>
-	  					<center>
-	  						<span style="font-size:24px"><a href='index.html#video'>[Video]</a></span><br>
+	  						<span style="font-size:24px"><a href='https://github.com/virajprabhu/clue'>[GitHub]</a></span><br>
 		  		  		</center>
 		  		  	  </td>
 	  	              <td align=center width=120px>
 	  					<center>
-	  						<span style="font-size:24px"><a href='https://drive.google.com/file/d/1b5vOPMmKHWmLr2eYza3CZEELYcKakExj/view?usp=sharing'>[Slides]</a></span><br>
+	  						<span style="font-size:24px"><a href='https://www.youtube.com/watch?v=VGSiORxS7BY'>[Video]</a></span><br>
 		  		  		</center>
 		  		  	  </td>
+	  	              <td align=center width=120px>
+	  					<center>
+	  						<span style="font-size:24px"><a href='https://www.dropbox.com/s/b85dpt8jzavl4rh/slides.pdf?dl=0'>[Slides]</a></span><br>
+		  		  		</center>
+		  		  	  </td>
+	  		  	   <td align=center width=120px>
+	  					<center>
+	  						<span style="font-size:24px"><a href='https://www.dropbox.com/s/gq2hellnq8nx2aq/clue_paper_poster.pdf?dl=0'>[Poster]</a></span><br>
+		  		  		</center>
+	  		  	  </td>
 		  		  	 </tr>
 	  			  <tr>
 			  </table>
@@ -184,7 +189,8 @@
 	  		  <center><h1>Abstract</h1></center>
 	  		  <tr>
 	  		  	<td>
-					Generalizing deep neural networks to new target domains is critical to their real-world utility. In practice, it may be feasible to get some target data labeled, but to be cost-effective it is desirable to select a subset that is maximally-informative via active learning (AL). In this work, we study the problem of AL under a domain shift. We empirically demonstrate how existing AL approaches based solely on model uncertainty or representative sampling are suboptimal for active domain adaptation. Our algorithm, Active Domain Adaptation via CLustering Uncertainty-weighted Embeddings (ADA-CLUE), i) identifies diverse datapoints for labeling that are both uncertain under the model and representative of unlabeled target data, and ii) leverages the available source and target data for adaptation by optimizing a semi-supervised adversarial entropy loss that is complimentary to our active sampling objective. On standard image classification benchmarks for domain adaptation, ADA-CLUE consistently performs as well or better than competing active adaptation, active learning, and domain adaptation methods across shift severities, model initializations, and labeling budgets.</a>
+					Generalizing deep neural networks to new target domains is critical to their real-world utility. In practice, it may be feasible to get some target data labeled, but to be cost-effective it is desirable to select a maximally-informative subset via active learning (AL). We study the problem of AL under a domain shift, called Active Domain Adaptation (Active DA). We demonstrate how existing AL approaches based solely on model uncertainty or diversity sampling are less effective for Active DA. We propose Clustering Uncertainty-weighted Embeddings (CLUE), a novel label acquisition strategy for Active DA that performs uncertainty-weighted clustering to identify target instances for labeling that are both uncertain under the model and diverse in feature space.
+   				CLUE consistently outperforms competing label acquisition strategies for Active DA and AL across learning settings on 6 diverse domain shifts for image classification.</a>
 	  		    </td>
 	  		  </tr>
 			</table>
@@ -230,16 +236,16 @@
 		  <hr>
         <center><h1>Video</h1></center>
         <p align="center">
-		<iframe id="video" width="660" height="395" src="https://drive.google.com/file/d/1mkBGtHmq1hq-SQSoKptHbr5BF_lyZIGP/preview" frameborder="0" allow="autoplay;" allowfullscreen align="center"></iframe></p>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/VGSiORxS7BY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
   		  <table align=center width=800px>
 			  <br>
 			  <tr><center>
-				<span style="font-size:28px">&nbsp;<a href='https://drive.google.com/file/d/1b5vOPMmKHWmLr2eYza3CZEELYcKakExj/view?usp=sharing'>[Slides]</a>
+				<!-- <span style="font-size:28px">&nbsp;<a href='https://drive.google.com/file/d/1b5vOPMmKHWmLr2eYza3CZEELYcKakExj/view?usp=sharing'>[Slides]</a> -->
 		  </table>
-        <hr>
+        <!-- <hr> -->
 
- 		<center><h1>Code</h1></center>
+ 		<!-- <center><h1>Code</h1></center>
 
   		  <table align=center width=420px>
 		  	<center>
@@ -265,8 +271,8 @@
 		  </table>
 
       	  <br>
-		  <hr>
-		<br>
+ 	  <hr> --> -->
+		<!-- <br> -->
 
               
 </body>
